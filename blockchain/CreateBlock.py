@@ -9,7 +9,7 @@ def _get_latest_block(block_id):
 def _CreateFirstBlock():
     block_id = 1 # el primero
     owned_by = "CPZGEyNjJkMWYtN2QzMC00ZDE3LWJjMWYtMzY0MTNiMjEyN2Jh" # una address que acabo de crear :)
-    block_reward = 0.3 # Lo que significa 3%, creo, espero que sea eso
+    block_reward = 0.03 # Lo que significa 3%, creo, espero que sea eso
     network = "TestNet" # testnet or mainet
     confirmer_network_domain = "https://testnet.blockchain.chipa.net" #obviamente no existe ahora mismo
 

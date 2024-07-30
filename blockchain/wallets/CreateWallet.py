@@ -2,6 +2,19 @@ import base64
 import uuid
 import hashlib
 import json
+from bip_utils import (
+    Bip39MnemonicGenerator,
+    Bip39SeedGenerator,
+    Bip44,
+    Bip44Coins,
+    Bip44Changes,
+    Bip39WordsNum,
+)
+
+def bip():
+    # Generate a 12-word BIP39 mnemonic
+    return Bip39MnemonicGenerator().FromWordsNumber(Bip39WordsNum.WORDS_NUM_12)
+
 
 def CreateWallet():
     test_str = uuid.uuid4()
